@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import type { TypeBackground } from '../../api/generated-types';
-import { getTheme } from '../../theme/themeset';
+import { getTheme } from '../../../theme/themeset';
 
 export const Background = ({ fields }: TypeBackground) => {
   const { theme } = fields;
