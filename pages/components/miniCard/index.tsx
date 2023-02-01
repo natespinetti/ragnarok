@@ -33,3 +33,5 @@ export const MiniCard = ({ fields }: TypeMiniCard) => {
       </Box>
   );
 };
+
+export default MiniCard;

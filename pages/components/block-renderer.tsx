@@ -58,3 +58,4 @@ const BlockRenderer = ({ block }: BlockRendererProps) => {
 };
 
 export { BlockRenderer };
+export default BlockRenderer;

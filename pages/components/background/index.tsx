@@ -14,3 +14,5 @@ export const Background = ({ fields }: TypeBackground) => {
       </Box>
   );
 };
+
+export default Background;

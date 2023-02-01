@@ -24,3 +24,5 @@ export const MiniCardGroup = ({ fields }: TypeMiniCardGroup) => {
     </>
   );
 };
+
+export default MiniCardGroup;

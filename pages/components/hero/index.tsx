@@ -60,3 +60,5 @@ export const Hero = ({ fields }: TypeHero) => {
     </Container>
   );
 };
+
+export default Hero;

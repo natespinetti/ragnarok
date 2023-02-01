@@ -46,3 +46,5 @@ export const Navigation = () => {
     </Menu>
   );
 };
+
+export default Navigation;

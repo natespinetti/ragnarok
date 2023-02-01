@@ -36,3 +36,5 @@ export const Card = ({ fields }: TypeCard) => {
     </Container>
   );
 };
+
+export default Card;

@@ -9,3 +9,5 @@ export const Spacer = ({ fields }: TypeSpacer) => {
       </Box>
   );
 };
+
+export default Spacer;

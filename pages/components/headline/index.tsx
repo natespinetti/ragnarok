@@ -12,3 +12,5 @@ export const Headline = ({ fields }: TypeHeadline) => {
     </Container>
   );
 };
+
+export default Headline;
