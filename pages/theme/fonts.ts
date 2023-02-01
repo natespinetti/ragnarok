@@ -3,4 +3,6 @@ export const fonts = {
     body: `'Poppins', san-serif`,
   };
 
-export default fonts;
+  let font;
+
+export default font;

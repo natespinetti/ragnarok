@@ -12,4 +12,4 @@ export const getTheme: Record<
   dark: ["brand.gray", "brand.yellow", "brand.plum"],
 };
 
-export default getTheme;
+export default ThemeName;

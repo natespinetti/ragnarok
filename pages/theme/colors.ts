@@ -25,4 +25,5 @@ export const colors = {
     },
   };
   
-export default colors;
+let color;
+export default color;
