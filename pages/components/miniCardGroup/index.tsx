@@ -3,7 +3,7 @@ import type { TypeMiniCardGroup } from '../../api/generated-types';
 import { MiniCard } from '../miniCard';
 
 export const MiniCardGroup = ({ fields }: TypeMiniCardGroup) => {
-  const { group } = fields;
+  const { group } = fields || {};
  
   return (
     <>

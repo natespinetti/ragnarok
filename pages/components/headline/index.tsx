@@ -2,7 +2,7 @@ import { Box, Container, Text } from '@chakra-ui/react'
 import type { TypeHeadline } from '../../api/generated-types';
 
 export const Headline = ({ fields }: TypeHeadline) => {
-  const { headline } = fields;
+  const { headline } = fields || {};
  
   return (
     <Container w={['90%', '80%']} maxW="1200px" p="2rem 0">

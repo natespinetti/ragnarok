@@ -3,7 +3,7 @@ import type { TypeCard } from '../../api/generated-types';
 import { useState } from 'react';
  
 export const Card = ({ fields }: TypeCard) => {
-  const { link, linkText, number, image, textOverImage, headline, summary, whichSide } = fields;
+  const { link, linkText, number, image, textOverImage, headline, summary, whichSide } = fields || {};
 
   const [isVisible, setIsVisible] = useState(false);
 

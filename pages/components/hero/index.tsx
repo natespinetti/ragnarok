@@ -34,7 +34,7 @@ const animation2 = `${textFlash2} 5s infinite`;
 const animation3 = `${textFlash3} 5s infinite`;
 
 export const Hero = ({ fields }: TypeHero) => {
-  const { headline, copy, arrowButtonCopy, arrowButtonLink, image, decorativeText } = fields;
+  const { headline, copy, arrowButtonCopy, arrowButtonLink, image, decorativeText } = fields || {};
 
   return (
     <Container p={{base: "7rem 0 3rem", xl: "8rem 0 7rem"}} w={['90%', '80%']} maxW="1200px">

@@ -3,7 +3,7 @@ import type { TypeBackground } from '../../api/generated-types';
 import { getTheme } from '../../../theme/themeset';
 
 export const Background = ({ fields }: TypeBackground) => {
-  const { theme } = fields;
+  const { theme } = fields || {};
 
   return (
       <Box 
