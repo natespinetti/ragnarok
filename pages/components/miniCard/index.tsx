@@ -1,4 +1,4 @@
-import { Image, Box, Text, Link, Container, Button } from '@chakra-ui/react'
+import { Image, Box, Text, Link, Button } from '@chakra-ui/react'
 import type { TypeMiniCard } from '../../api/generated-types';
 import { useState } from 'react';
 

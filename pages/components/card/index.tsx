@@ -1,7 +1,7 @@
 import { Image, Box, Text, Link, Container, Button } from '@chakra-ui/react'
 import type { TypeCard } from '../../api/generated-types';
 import { useState } from 'react';
-
+ 
 export const Card = ({ fields }: TypeCard) => {
   const { link, linkText, number, image, textOverImage, headline, summary, whichSide } = fields;
 

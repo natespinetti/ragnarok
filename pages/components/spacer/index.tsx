@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text, Link, Container, keyframes } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import type { TypeSpacer } from '../../api/generated-types';
 
 export const Spacer = ({ fields }: TypeSpacer) => {

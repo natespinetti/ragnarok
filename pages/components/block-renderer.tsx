@@ -10,7 +10,7 @@ import { Navigation } from './navigation';
 import { Headline } from './headline';
 import { MiniCardGroup } from './miniCardGroup';
 import { Spacer } from './spacer';
-
+ 
 type BlockRendererProps = {
   block: any;
 };

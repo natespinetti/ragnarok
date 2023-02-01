@@ -1,7 +1,7 @@
 import { Image, Box, Heading, Text, Link, Container, keyframes, Button } from '@chakra-ui/react'
 import type { TypeHero } from '../../api/generated-types';
 import { motion } from 'framer-motion';
-
+ 
 const textFlash1 = keyframes`
   0% { opacity: 0%; }
   9.9% { opacity: 0%; }

@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text, Link, Container, keyframes } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import type { TypeBackground } from '../../api/generated-types';
 import { getTheme } from '../../theme/themeset';
 

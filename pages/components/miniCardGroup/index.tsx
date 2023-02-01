@@ -4,7 +4,7 @@ import { MiniCard } from '../miniCard';
 
 export const MiniCardGroup = ({ fields }: TypeMiniCardGroup) => {
   const { group } = fields;
-
+ 
   return (
     <>
     <Container w={['90%', '80%']} maxW="1200px" p="2rem 0">
