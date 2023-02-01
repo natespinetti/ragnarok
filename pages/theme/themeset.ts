@@ -11,5 +11,3 @@ export const getTheme: Record<
   transparent: ["transparent", "brand.white", "brand.yellow"],
   dark: ["brand.gray", "brand.yellow", "brand.plum"],
 };
-
-export default ThemeName;

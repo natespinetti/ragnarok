@@ -25,4 +25,3 @@ const overrides = {
 }
 
 export const theme =  extendTheme(overrides);
-export default overrides;
