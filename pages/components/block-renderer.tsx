@@ -3,6 +3,13 @@ import { ComponentContentTypes } from '../api/constants';
 import _ from 'lodash';
 
 import { Hero } from './hero';
+import { Background } from './background';
+import { Card } from './card';
+import { MiniCard } from './miniCard';
+import { Navigation } from './navigation';
+import { Headline } from './headline';
+import { MiniCardGroup } from './miniCardGroup';
+import { Spacer } from './spacer';
 
 type BlockRendererProps = {
   block: any;
@@ -10,6 +17,13 @@ type BlockRendererProps = {
 
 const ContentTypeMap = {
   [ComponentContentTypes.hero]: Hero,
+  [ComponentContentTypes.background]: Background,
+  [ComponentContentTypes.card]: Card,
+  [ComponentContentTypes.MiniCard]: MiniCard,
+  [ComponentContentTypes.miniCardGroup]: MiniCardGroup,
+  [ComponentContentTypes.navigation]: Navigation,
+  [ComponentContentTypes.headline]: Headline,
+  [ComponentContentTypes.spacer]: Spacer,
 };
 
 const BlockRenderer = ({ block }: BlockRendererProps) => {

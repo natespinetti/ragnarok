@@ -2,6 +2,7 @@ import * as Contentful from "contentful";
 
 export interface TypeCardFields {
     link: Contentful.EntryFields.Symbol;
+    linkText?: Contentful.EntryFields.Symbol;
     number: Contentful.EntryFields.Symbol;
     image: Contentful.Asset;
     textOverImage: Contentful.EntryFields.Symbol;

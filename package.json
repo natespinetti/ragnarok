@@ -10,9 +10,11 @@
     "get-types": "dotenv -e .env -- sh -c 'cf-content-types-generator -s $CF_SPACE_ID -t $CF_CMA_TOKEN -o pages/api/generated-types'"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.16",
     "@chakra-ui/react": "^2.4.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource/poppins": "^4.5.10",
     "@next/font": "13.1.1",
     "cf-content-types-generator": "^2.2.4",
     "dotenv": "^16.0.3",

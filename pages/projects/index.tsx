@@ -3,16 +3,16 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
-import { getPage } from './api/api'
-import { PageContentTypes } from './api/constants'
-import { isPreviewEnabled } from './api/preview'
-import type { TypePage } from './api/types'
+import { getPage } from '../api/api'
+import { PageContentTypes } from '../api/constants'
+import { isPreviewEnabled } from '../api/preview'
+import type { TypePage } from '../api/types'
 import type { GetServerSideProps } from 'next'
 import ErrorPage from 'next/error'
 import React from 'react'
-import { BlockRenderer } from './components/block-renderer'
+import { BlockRenderer } from '../components/block-renderer'
 import { Box, Container } from '@chakra-ui/react'
-import { Navigation } from './components/navigation'
+import { Navigation } from '../components/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,7 +26,7 @@ export default function Index({ page }: PageProps) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>Nathan Spinetti Portfolio</title>
         <meta name="description" content="Nathan Spinetti is a Front-End Developer at Workhuman." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/NSLogo.svg" />
@@ -45,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   query,
   locale,
 }) => {
-  const slug = String(params?.slug ?? 'home')
+  const slug = String(params?.slug ?? 'projects')
   // const preview = isPreviewEnabled(query)
   // const locale = String(params?.locale ?? 'en-US');
   const page = await getPage({

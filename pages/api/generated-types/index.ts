@@ -1,3 +1,9 @@
+export type { TypeBackground, TypeBackgroundFields } from "./TypeBackground";
 export type { TypeCard, TypeCardFields } from "./TypeCard";
+export type { TypeHeadline, TypeHeadlineFields } from "./TypeHeadline";
 export type { TypeHero, TypeHeroFields } from "./TypeHero";
+export type { TypeMiniCard, TypeMiniCardFields } from "./TypeMiniCard";
+export type { TypeMiniCardGroup, TypeMiniCardGroupFields } from "./TypeMiniCardGroup";
 export type { TypePage, TypePageFields } from "./TypePage";
+export type { TypeProject, TypeProjectFields } from "./TypeProject";
+export type { TypeSpacer, TypeSpacerFields } from "./TypeSpacer";

@@ -4,6 +4,13 @@ export const PageContentType = 'page';
 
 export const ComponentContentTypes = {
   hero: 'hero',
+  background: 'background',
+  card: 'card',
+  spacer: 'spacer',
+  MiniCard: 'miniCard',
+  miniCardGroup: 'miniCardGroup',
+  headline: 'headline',
+  navigation: 'navigation',
 };
 
 export const PageContentTypes = {
