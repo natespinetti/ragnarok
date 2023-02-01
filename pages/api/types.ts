@@ -3,7 +3,7 @@ import type { TypeBackgroundFields, TypeHeroFields, TypePageFields, TypeCardFiel
 
 // import type {  } from './generated-types/TypeHero';
 
-export * from './generated-types';
+export { default } from './generated-types';
 export type TypePage = Contentful.Entry<TypePageFields>;
 export type TypeHero = Contentful.Entry<TypeHeroFields>;
 export type TypeBackground = Contentful.Entry<TypeBackgroundFields>;

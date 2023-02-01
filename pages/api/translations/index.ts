@@ -1,3 +1,3 @@
-export * from './context';
-export * from './getInitialLocale';
-export * from './locales';
+export { default } from './context';
+export { default } from './getInitialLocale';
+export { default } from './locales';
