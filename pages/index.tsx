@@ -30,7 +30,6 @@ export default function Index({ page }: PageProps) {
         <meta name="description" content="Nathan Spinetti is a Front-End Developer at Workhuman." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/NSLogo.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
       </Head>
       <main>
         <Navigation />
