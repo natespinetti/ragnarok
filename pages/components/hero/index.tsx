@@ -34,19 +34,22 @@ const animation2 = `${textFlash2} 5s infinite`;
 const animation3 = `${textFlash3} 5s infinite`;
 
 export const Hero = ({ fields }: TypeHero) => {
-  const { headline, copy, arrowButtonCopy, arrowButtonLink, image, decorativeText } = fields || {};
+  const { headline, copy, firstCta, firstCtaLink, secondCta, secondCtaLink, image, decorativeText } = fields || {};
 
   return (
     <Container p={{base: "7rem 0 3rem", xl: "8rem 0 7rem"}} w={['90%', '80%']} maxW="1200px">
       <Box display={{base:'block', md:'flex'}}>
-        <Box flex="1" alignSelf="center">
-          <Heading as="h1" color="brand.white" fontSize={{base:'3xl', md:"4xl", lg:'7xl'}} fontWeight="900" w={{base:'100%', xl:'130%'}} pos="relative" zIndex="1" pb={{base:"1rem", md:"0"}} mb={{base:"0", xl:"6rem"}}>
+        <Box flex="1" alignSelf="center" paddingBottom={firstCta ? {base:"2rem", xl:"6rem"} : undefined}>
+          <Heading as="h1" color="brand.white" fontSize={{base:'3xl', md:"4xl", lg:'7xl'}} fontWeight="900" w={{base:'100%', xl:'130%'}} pos="relative" zIndex="1" pb={{base:"1rem", md:"0"}} marginBottom={firstCta ? {base:"0", xl:"2rem"} : {base:"0", xl:"6rem"}} >
             {headline}
           </Heading>
           <Text>
             {copy}
           </Text>
-          <Link display={[arrowButtonCopy ?? 'none']} href={arrowButtonLink}><Button mt="5" bg="brand.yellow" color="brand.gray" _hover={{ bg: "brand.yellow.500" }}>{arrowButtonCopy}</Button></Link>
+          <Box display="flex" gridGap="2rem">
+            <Link display={[firstCta ?? 'none']} href={firstCtaLink}><Button mt="5" bg="brand.yellow" color="brand.gray" _hover={{ bg: "brand.yellows.500" }}>{firstCta}</Button></Link>
+            <Link display={[secondCta ?? 'none']} href={secondCtaLink}><Button mt="5" bg="brand.yellow" color="brand.gray" _hover={{ bg: "brand.yellows.500" }}>{secondCta}</Button></Link>
+          </Box>
         </Box>
         <Box flex="1" pos="relative">
           <Image src={image?.fields.file.url} alt={image?.fields.title} shadow="md" borderRadius="25px"/>

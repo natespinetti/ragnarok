@@ -5,11 +5,14 @@ import _ from 'lodash';
 import { Hero } from './hero';
 import { Background } from './background';
 import { Card } from './card';
+import { ImageText } from './imageText';
 import { MiniCard } from './miniCard';
 import { Navigation } from './navigation';
 import { Headline } from './headline';
 import { MiniCardGroup } from './miniCardGroup';
 import { Spacer } from './spacer';
+import { Images } from './images';
+import { Copy } from './copy';
  
 type BlockRendererProps = {
   block: any;
@@ -24,6 +27,9 @@ const ContentTypeMap = {
   [ComponentContentTypes.navigation]: Navigation,
   [ComponentContentTypes.headline]: Headline,
   [ComponentContentTypes.spacer]: Spacer,
+  [ComponentContentTypes.images]: Images,
+  [ComponentContentTypes.copy]: Copy,
+  [ComponentContentTypes.imageText]: ImageText,
 };
 
 const BlockRenderer = ({ block }: BlockRendererProps) => {

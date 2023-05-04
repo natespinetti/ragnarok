@@ -18,7 +18,7 @@ export const Navigation = () => {
         </Box>
 
         <Box display={{base:"flex", md:"none"}} justifyContent="space-between" w="90vw" m="auto"  p="1rem">
-        <Link href="/"><Image src={`NSLogo.svg`} w="50px" h="50px" alt="Nathan Spinetti Logo" bg="brand.white" transition=".1s ease-in-out" borderRadius="15px" p=".5rem" _hover={{shadow: "md"}}/></Link>
+        <Link href="/"><Image src={`../NSLogo.svg`} w="50px" h="50px" alt="Nathan Spinetti Logo" bg="brand.white" transition=".1s ease-in-out" borderRadius="15px" p=".5rem" _hover={{shadow: "md"}}/></Link>
         <IconButton onClick={onOpen} colorScheme="transparent" h="50px" w="50px"
               icon={<HamburgerIcon w="30px" h="30px" />}
               aria-label={'Toggle Navigation'}

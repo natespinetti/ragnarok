@@ -40,17 +40,17 @@ const getPageQuery = (params: GetPageParams) => ({
   'fields.type': params.type,
 });
 
-export async function getPage(params: GetPageParams) {
-  // get query from pagequery function
-  const query = getPageQuery(params);
-  // get entries from query
-  const { items } = await getClient(params.preview!).getEntries(query);
-  // construct page
-  const page = items[0];
+// export async function getPage(params: GetPageParams) {
+//   // get query from pagequery function
+//   const query = getPageQuery(params);
+//   // get entries from query
+//   const { items } = await getClient(params.preview!).getEntries(query);
+//   // construct page
+//   const page = items[0];
 
-  // parse page or return null
-  return page ? parsePage(page) : null;
-}
+//   // parse page or return null
+//   return page ? parsePage(page) : null;
+// }
 
 // gets type of page -- used in blog posts
 type GetPagesOfTypeParams = {
@@ -76,3 +76,14 @@ export async function getPagesOfType(params: GetPagesOfTypeParams) {
   // parse page, or don't
   return pages ? pages.map((page) => parsePage(page)) : [];
 }
+
+export async function getPage(params: GetPageParams) {
+  const query = {
+    ...getPageQuery(params),
+    'fields.slug': params.slug,
+  };
+  const { items } = await getClient(params.preview!).getEntries(query);
+  const page = items[0];
+  return page ? parsePage(page) : null;
+}
+

@@ -11,6 +11,9 @@ export const ComponentContentTypes = {
   miniCardGroup: 'miniCardGroup',
   headline: 'headline',
   navigation: 'navigation',
+  images: 'images',
+  copy: 'copy',
+  imageText: 'imageText',
 };
 
 export const PageContentTypes = {

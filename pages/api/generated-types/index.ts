@@ -1,7 +1,10 @@
 export type { TypeBackground, TypeBackgroundFields } from "./TypeBackground";
 export type { TypeCard, TypeCardFields } from "./TypeCard";
+export type { TypeCopy, TypeCopyFields } from "./TypeCopy";
 export type { TypeHeadline, TypeHeadlineFields } from "./TypeHeadline";
 export type { TypeHero, TypeHeroFields } from "./TypeHero";
+export type { TypeImages, TypeImagesFields } from "./TypeImages";
+export type { TypeImageText, TypeImageTextFields } from "./TypeImageText";
 export type { TypeMiniCard, TypeMiniCardFields } from "./TypeMiniCard";
 export type { TypeMiniCardGroup, TypeMiniCardGroupFields } from "./TypeMiniCardGroup";
 export type { TypePage, TypePageFields } from "./TypePage";
