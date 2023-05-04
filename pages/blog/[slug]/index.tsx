@@ -45,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   query,
   locale,
 }) => {
-  const slug = params.slug as string;
+  const slug = params?.slug as string;
   // const preview = isPreviewEnabled(query)
   // const locale = String(params?.locale ?? 'en-US');
   const page = await getPage({
