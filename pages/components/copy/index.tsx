@@ -5,7 +5,7 @@ import type { TypeCopy } from '../../api/generated-types'
 export const Copy = ({ fields }: TypeCopy) => {
   const { text } = fields || {}
 
-  const contentWithLineBreaks = text
+  const contentWithLineBreaks = (text ?? '')
     .split('\n')
     .map((line, index) => (
       <React.Fragment key={index}>
