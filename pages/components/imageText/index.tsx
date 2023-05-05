@@ -2,7 +2,7 @@ import { Image, Box, Text, Link, Container, Button } from '@chakra-ui/react'
 import type { TypeImageText } from '../../api/generated-types';
  
 export const ImageText = ({ fields }: TypeImageText) => {
-  const { link, linkText, image, headline, summary, whichSide } = fields || {};
+  const { link, linkText, ctaTarget, image, headline, summary, whichSide } = fields || {};
 
   return (
     <Container w={['90%', '80%']} maxW="1200px" p="2rem 0">
@@ -15,7 +15,7 @@ export const ImageText = ({ fields }: TypeImageText) => {
             <Text fontSize="xl" mb="4">{summary}</Text>
             {
         link ? (
-          <Link href={link}>
+          <Link href={link} isExternal={ctaTarget}>
             <Button bg="brand.gray" color="brand.white" _hover={{ bg: "brand.grays.500" }}>{linkText ?? 'View Project'}</Button>
           </Link>
         ) : (
