@@ -40,7 +40,7 @@ export const Hero = ({ fields }: TypeHero) => {
     <Container p={{base: "7rem 0 3rem", xl: "8rem 0 7rem"}} w={['90%', '80%']} maxW="1200px">
       <Box display={{base:'block', md:'flex'}}>
         <Box flex="1" alignSelf="center" paddingBottom={firstCta ? {base:"2rem", xl:"6rem"} : undefined}>
-          <Heading as="h1" color="brand.white" fontSize={{base:'3xl', md:"4xl", lg:'7xl'}} fontWeight="900" w={{base:'100%', xl:'130%'}} pos="relative" zIndex="1" pb={{base:"1rem", md:"0"}} marginBottom={firstCta ? {base:"0", xl:"2rem"} : {base:"0", xl:"6rem"}} >
+          <Heading as="h1" color="brand.white" fontSize={{base:'3xl', md:"4xl", lg:'4.25rem'}} fontWeight="900" w={{base:'100%', xl:'130%'}} pos="relative" zIndex="1" pb={{base:"1rem", md:"0"}} marginBottom={firstCta ? {base:"0", xl:"2rem"} : {base:"0", xl:"6rem"}} >
             {headline}
           </Heading>
           <Text>
