@@ -11,7 +11,7 @@ export const Navigation = () => {
         <Box justifyContent="space-between" w="90vw" m="auto"  p="1rem" maxW="1400px" display={{base:"none", md:"flex"}}>
         <Link href="/"><Image src={`NSLogo.svg`} w="65px" h="65px" alt="Nathan Spinetti Logo" bg="brand.white" transition=".1s ease-in-out" borderRadius="15px" p=".5rem" _hover={{shadow: "md"}}/></Link>
           <Flex>
-            <MenuItem fontSize="lg" w="fit-content" m="0 1rem" borderRadius="15px" transition=".1s ease-in-out" color="brand.white" fontWeight="600" _hover={{ bg: "rgba(188, 189, 192, .2)"}} as={Link} href="/projects/">Projects</MenuItem>
+            {/* <MenuItem fontSize="lg" w="fit-content" m="0 1rem" borderRadius="15px" transition=".1s ease-in-out" color="brand.white" fontWeight="600" _hover={{ bg: "rgba(188, 189, 192, .2)"}} as={Link} href="/projects/">Projects</MenuItem> */}
             <MenuItem fontSize="lg" w="fit-content" m="0 1rem" borderRadius="15px" transition=".1s ease-in-out" color="brand.white" fontWeight="600" _hover={{ bg: "rgba(188, 189, 192, .2)"}} as={Link} href="/about/">About</MenuItem>
             <MenuItem fontSize="lg" w="fit-content" m="0 1rem" borderRadius="15px" transition=".1s ease-in-out" color="brand.white" fontWeight="600" _hover={{ bg: "rgba(188, 189, 192, .2)"}} as={Link} href="/blog/">Blog</MenuItem>
           </Flex>
